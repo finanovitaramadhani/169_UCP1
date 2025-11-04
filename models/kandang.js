@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         Usia_hewan: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         Jenis_hewan: {
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         Tahun_lahir: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false
         }
     }, {

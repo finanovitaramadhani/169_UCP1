@@ -48,8 +48,8 @@ app.put('/kandang/:id', async (req, res) => {
         if(!kandang){
             return res.status(404).send({message: 'Data kandang not found'});
         }
-        await komik.update(data);
-        res.send({mesage: "Data kandang berhasil diupdate"}, komik)
+        await kandang.update(data);
+        res.send({mesage: "Data kandang berhasil diupdate"}, kandang)
     } catch (error) {
         res.status(500).send({message: error.message});
     }
